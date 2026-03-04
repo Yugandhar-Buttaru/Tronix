@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tronix</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+
+    <h1 class="title">Tronix</h1>
+
+    <div id="menu">
+    <button onclick="startGame()">START GAME</button>
+    </div>
+
+    <div id="score">score: 0</div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <div class="controls">
+
+    <button onclick="setDirection('up')">Forward</button>
+
+    <div class="middle">
+    <button onclick="setDirection(left)">left</button>
+    <button onclick="boost()">boost</button>
+    <button onclick="setDirection"('right')>Right</button>    
+    </div>
+
+    <button onclick="setDirection('down')">Backward</button>
+
+    </div>
+
+    <div id="gameOver">
+    <h2>GAME OVER</h2>
+    <button onclick="restartGame()">Restart</button>
+    </div>
+
+</body>
+</html>
