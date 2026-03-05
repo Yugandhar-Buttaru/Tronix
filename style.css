@@ -1,0 +1,80 @@
+body {
+    background: black;
+    color: cyan;
+    font-family: Arial;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+.title {
+    text-shadow: 0 0 15px cyan;
+}
+
+canvas {
+    display: block;
+    margin: auto;
+    background: #030303;
+    border: 2px solid cyan;
+    box-shadow: 0 0 25px cyan;
+}
+
+#menu {
+    margin: 20px;
+}
+
+#menu button {
+    font: size 20px;
+    padding: 10px 30px;
+    background: black;
+    color: cyan;
+    border: 2px solid cyan;
+    box-shadow: 0 0 10px cyan;
+    cursor: pointer;
+}
+
+#score {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font: size 18px;
+}
+
+.controls {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.controls button {
+    background: black;
+    color: cyan;
+    border: 2px solid cyan;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px cyan;
+}
+
+.controls button:hover {
+    background: cyan;
+    color: black;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+}
+
+#gameOver {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+    border: 2px solid cyan;
+    padding: 40px;
+    box-shadow: 0 0 20px cyan;
+}
