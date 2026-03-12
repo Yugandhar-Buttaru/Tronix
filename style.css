@@ -1,0 +1,137 @@
+body{
+background:radial-gradient(ellipse at center, #0a0a0a 0%, #000000 100%);
+color:cyan;
+font-family:'Courier New', monospace;
+text-align:center;
+margin:0;
+overflow:hidden;
+min-height:100vh;
+}
+
+.title{
+text-shadow:0 0 25px cyan, 0 0 50px cyan;
+font-size:3em;
+margin:20px 0;
+animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+0%, 100% { opacity: 1; }
+50% { opacity: 0.8; }
+}
+
+canvas{
+display:block;
+margin:auto;
+background:radial-gradient(ellipse at center, #050505 0%, #000000 100%);
+border:2px solid cyan;
+box-shadow:0 0 30px cyan, inset 0 0 20px rgba(0,255,255,0.1);
+border-radius:5px;
+}
+
+#menu{
+margin:20px;
+}
+
+#menu button{
+font-size:24px;
+padding:15px 40px;
+background:black;
+color:cyan;
+border:2px solid cyan;
+box-shadow:0 0 15px cyan;
+cursor:pointer;
+transition:all 0.3s ease;
+border-radius:8px;
+font-weight:bold;
+text-transform:uppercase;
+letter-spacing:2px;
+}
+
+#menu button:hover {
+background:cyan;
+color:black;
+transform:scale(1.1);
+box-shadow:0 0 25px cyan, inset 0 0 10px rgba(0,255,255,0.3);
+}
+
+#score{
+position:absolute;
+top:20px;
+left:20px;
+font-size:18px;
+text-shadow: 0 0 10px cyan;
+}
+
+#highScore{
+position:absolute;
+top:20px;
+right:20px;
+font-size:18px;
+text-shadow: 0 0 10px cyan;
+}
+
+.controls{
+position:fixed;
+bottom:20px;
+left:50%;
+transform:translateX(-50%);
+}
+
+.controls button{
+background:black;
+color:cyan;
+border:2px solid cyan;
+padding:10px 20px;
+margin:5px;
+cursor:pointer;
+box-shadow:0 0 10px cyan;
+transition:all 0.3s ease;
+border-radius:5px;
+font-weight:bold;
+}
+
+.controls button:hover{
+background:cyan;
+color:black;
+transform:scale(1.05);
+box-shadow:0 0 15px cyan;
+}
+
+.controls button:active {
+transform:scale(0.95);
+}
+
+.middle{
+display:flex;
+justify-content:center;
+}
+
+#gameOver{
+display:none;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:rgba(0,0,0,0.9);
+border:2px solid cyan;
+padding:40px;
+box-shadow:0 0 30px cyan, inset 0 0 20px rgba(0,255,255,0.2);
+text-align:center;
+border-radius:10px;
+}
+
+#gameOver h2 {
+color:#ff0000;
+text-shadow:0 0 15px #ff0000;
+margin-bottom:20px;
+}
+
+#gameOver p {
+margin:10px 0;
+font-size:16px;
+}
+
+#gameOver button {
+margin-top:20px;
+}

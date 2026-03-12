@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tronix</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 class="title">Tronix</h1>
+
+<div id="menu">
+<button onclick="startGame()">START GAME</button>
+</div>
+
+<div id="score">Score: 0</div>
+<div id="highScore">High Score: 0</div>
+
+<canvas id="gameCanvas"></canvas>
+
+<div class="controls">
+
+<button onclick="setDirection('up')">Forward</button>
+
+<div class="middle">
+<button onclick="setDirection('left')">Left</button>
+<button onclick="boost()">Boost</button>
+<button onclick="setDirection('right')">Right</button>
+</div>
+
+<button onclick="setDirection('down')">Backward</button>
+
+</div>
+
+<div id="gameOver">
+<h2>GAME OVER</h2>
+<p>Final Score: <span id="finalScore">0</span></p>
+<p>High Score: <span id="finalHighScore">0</span></p>
+<button onclick="restartGame()">Restart</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
